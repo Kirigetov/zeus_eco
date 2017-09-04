@@ -1,0 +1,76 @@
+
+.members
+	display: flex
+	flex-flow: row wrap 
+	-webkit-align-items: stretch 
+	align-items: stretch 
+	width: 100% 
+	margin: 50px 0 
+	font-size: 0
+	+r(1023)
+		display: block
+		margin: 30px 0 -20px 
+	&_2_col
+		max-width: 700px 
+		margin: 0 auto 
+		.member__col 
+			width: 50% 
+
+.member__col
+	width: 33.3%
+	text-align: center 
+	+r(1023)
+		display: inline-block
+		width: 50%
+		margin-bottom: 60px 
+	+r(767)
+		width: 100% 
+		margin-bottom: 45px
+
+.member
+	position: relative
+	display: inline-block
+	max-width: 320px 
+	vertical-align: top
+	height: 100%
+	+r(1023)
+		max-width: 340px 
+	&__photo
+		width: 200px 
+		height: 200px 
+		border-radius: 50% 
+		margin: 0 auto 25px
+		overflow: hidden
+		img
+			width: 100% 
+		+r(767)
+			width: 150px 
+			height: 150px 
+		&_mod
+			img
+				transform: translateY(-9%)
+
+	&__name
+		margin-bottom: 10px
+		font-size: 25px
+		line-height: 1
+		color: #2ab747 
+		+r(767)
+			font-size: 26px
+	&__position
+		height: 50px
+		+mm
+		margin-bottom: 10px 
+		padding: 0 10px 
+		font-size: 18px
+		color: #000
+	&__mail
+		transition: opacity 0.15s 
+		&:hover
+			opacity: 0.7 
+	&__info
+		font-size: 14px
+		color: #000
+		line-height: 1.2
+		max-width: 280px
+		margin: 0 auto

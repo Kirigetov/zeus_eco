@@ -1,10 +1,21 @@
 // Normally mainpage styles
 .section
-	&_top
+	position: relative
+	padding: 30px 0
+	&_main
 		background-repeat: no-repeat
 		background-position: 50% 50%
 		background-size: cover
-	
+	&__top_bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%   
+		padding: 12px 0 
+		background: rgba(#000, 0.5)
+	&_no_pad
+		padding: 0 
+
 .main-logo
 	max-width: 800px
 	margin: 0 auto
@@ -60,3 +71,83 @@
 
 .upper-text
 	text-transform: uppercase
+
+.simple-img
+	margin-top: 30px
+	max-width: 100% 
+	width: 100%
+	&_no_mg
+		margin-top: 0
+
+.companies 
+	&__list
+		font-size: 0
+		li
+			display: inline-block
+			margin-bottom: 40px
+			vertical-align: middle
+			padding: 0 40px
+			&:before
+				content: "" 
+				display: inline-block
+				vertical-align: middle
+				height: 100% 
+				width: 0
+
+.table-indicators
+	max-width: 610px 
+	margin: 0 auto 30px
+	text-align: left
+	empty-cells: show
+	tr
+		td
+			height: 50px
+			line-height: 50px 
+			font-size: 25px
+			border-top: 2px solid #2ab747
+			&:last-child
+				text-align: right
+	tr
+		&:first-child
+			td
+				border-top: none 
+
+.table-indicators_wide
+	max-width: 850px 
+	tr
+		td
+			&:first-child
+				padding-right: 5px 
+				border-top: none 
+				text-align: right
+	tr
+		&:last-child
+			td
+				border-top: none 
+
+.right-align
+	text-align: right
+
+.left-align
+	text-align: right
+
+.cell-bold 
+	+mb
+	padding-right: 0!important
+
+.cell-bold-border
+	display: inline-block
+	max-width: 405px
+	width: 100%
+	border-top: 4px solid #2ab747
+	text-align: left
+	+clr
+	span
+		&:last-child
+			float: right
+
+.shift-to_right
+	padding-left: 35px 
+
+.w800 
+	max-width: 840px 

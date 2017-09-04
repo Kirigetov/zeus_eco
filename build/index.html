@@ -13,7 +13,7 @@
 <!-- BEGIN  out-->
 <div class="out">
 	
-	<section class="section section_top" style="background-image: url(img/main-bg.png);" >
+	<section class="section section_no_pad section_main" style="background-image: url(img/main-bg.png);" >
 	
 		<header class="header">
 	
@@ -93,7 +93,7 @@
 	
 				<div class="btn-wrap btn-wrap_abs">
 	
-					<a href="" class="btn btn_border btn_green">регистрация</a>
+					<button class="btn btn_border btn_green">регистрация</button>
 	
 				</div>
 	
@@ -115,57 +115,327 @@
 	
 	
 	<section class="section" >
-		<h2 class="title-h2">Генерируем криптовалюту на собственных мощностях </h2>
-		
-		<div class="section__part section__part_wide">
-			<ul class="features features_blocks">
-				<li class="feature feature_flex">
-					<span class="feature__img feature_man" style="background-image: url(img/feature1.png);"></span>
-					<span class="feature__text">1 человек <br> производит<br>300 кг<br>отходов в год</span>
-				</li>
-				<li class="feature feature_flex">
-					<span class="feature__img feature_garbage" style="background-image: url(img/feature2.png);></span>
-					<span class="feature__text">В ЕС ежегодно<br>образуется<br>200 млн. тонн<br>бытовых отходов</span>
-				</li>
-				<li class="feature feature_flex">
-					<span class="feature__img feature_atom" style="background-image: url(img/feature3.png);></span>
-					<span class="feature__text">Земля под<br>мусорной свалкой<br>токсична<br> 50-100 лет</span>
-				</li>
-			</ul>
+		<div class="row">
+			<h2 class="title-h2">Вы, наверное, слышали, что:</h2>
+			
+			<div class="features">
+				<ul class="features__list">
+					<li class="feature feature_flex">
+						<div class="feature__inner">
+							<div class="feature__img feature_man">
+								<img src="img/feature1.png" alt="">
+							</div>
+							<div class="feature__text">1 человек<br> производит<br> <span class="text text_orange">300 кг</span><br> отходов в год</div>
+						</div>
+					</li>
+					<li class="feature feature_flex">
+						<div class="feature__inner">
+							<div class="feature__img feature_man">
+								<img src="img/feature2.png" alt="">
+							</div>
+							<div class="feature__text">В ЕС ежегодно<br> образуется<br> <span class="text text_orange">200 млн. тонн</span><br> бытовых отходов</div>
+						</div>
+					</li> 
+					<li class="feature feature_flex">
+						<div class="feature__inner">
+							<div class="feature__img feature_man">
+								<img src="img/feature3.png" alt="">
+							</div>
+							<div class="feature__text">Земля под<br> мусорной свалкой<br> токсична <br> <span class="text text_orange">50-100 лет</span></div>
+						</div>
+					</li> 
+				</ul>
+			</div>
+	
+			<p class="text text_center">Поэтому наша миссия – дать каждому желающему возможность не только помочь в решении проблемы утилизации мусора, но и выгодно инвестировать, делая мир чище. </p>
+			
+			<p class="text text_center">Впервые в мире реализуется проект постройки перерабатывающего завода, который генерирует электроэнергию из отходов и использует её для майнинга – ZEUS EcoCryptoMining</p>
+	
+			<div class="params">
+				<ul class="circle-items">
+					<li class="circle-item">
+						<div class="circle-item__text">Мощность: </div>
+						<div class="circle-item__value circle-item__value_big">32 400 000</div>
+						<div class="circle-item__text">Квт/ч в год</div>
+					</li>
+					<li class="circle-item">
+						<div class="circle-item__text circle-item__text_mt">Ферма на </div>
+						<div class="circle-item__value circle-item__value_big">18 000 GPU</div>
+					</li>
+					<li class="circle-item">
+						<div class="circle-item__text">Генерация </div>
+						<div class="circle-item__value circle-item__value_big">6 000 ETH</div>
+						<div class="circle-item__text">в месяц</div>
+					</li>
+					<li class="circle-item">
+						<div class="circle-item__text">Чистая <br> годовая прибыль: </div>
+						<div class="circle-item__value circle-item__value_big">20 175 тыс. EUR</div>
+					</li>
+				</ul>
+			</div>
+			
+			<p class="text text_center">Но ZEUS EcoCryptoMining – не только генерация криптовалюты, а и продажа тепла, удобрений и вторичного сырья. Это устраняет риски, которые неизбежны при работе привычной майнинговой фермы. </p>
+	
+			<div class="btn-wrap btn-wrap_pad">
+				<button class="btn btn_mid">Узнайте подробности</button>
+			</div>
 		</div>
+	</section>
+	<section class="section section_video" id="head" style="background-image: url(img/poster.png);">
+		<div class="section__top section__top_bg">
+			<div class="row">
+				<h2 class="title-h2 title-h2_white">Почему эта концепция реализуется</h2>
+				<h3 class="title-h3 title-h3_white">В одной идее удалось совместить 5-ти летний опыт организации мусороперерабатывающих производств и 2-х летний опыт постройки больших майнинговых ферм. </h3>
+			</div>
+		</div>
+		<div class="row">
+			<a href="#" id="play-video" class="video">
+				<i class="icon-play"></i>
+				<div id="player" class="home-player"></div>
+			</a>
+		</div>
+	</section>
+	<section class="section" id="id_team">
+		<div class="row ">
+			<h2 class="title-h2 title-h2_green">Кто в нашей команде:</h2>
+			
+			<div class="members">
+				<div class="member__col">
+					<div class="member">
+						<div class="member__photo member__photo_mod">
+							<img src="img/workers/mem1.jpg" alt="">
+						</div>
+						<div class="member__name">Болеслав Войцеховский</div>
+						<div class="member__position">Руководитель направления майнинга криптовалют</div>
 	
-		<p class="text">Поэтому наша миссия – дать каждому желающему возможность не только помочь в решении проблемы утилизации мусора, но и выгодно инвестировать, делая мир чище. </p>
-		
-		<p class="text">Впервые в мире реализуется проект постройки перерабатывающего завода, который генерирует электроэнергию из отходов и использует её для майнинга – ZEUS EcoCryptoMining</p>
-	
-		<div class="params">
-			<ul class="circle-items">
-				<li class="circle-item">
-					<div class="circle-item__text">Участвуете в <br> постройке </div>
-					<div class="circle-item__value circle-item__value_big">70</div>
-					<div class="circle-item__text">майнинговых <br> ферм </div>
-				</li>
-				<li class="circle-item">
-					<div class="circle-item__text circle-item__text_mt">Ежемесячно <br> добываете монеты <br> на сумму до </div>
-					<div class="circle-item__value circle-item__value_mid">56 000$</div>
-				</li>
-				<li class="circle-item">
-					<div class="circle-item__pic">
-						<i class="icon-lock"></i>
+						<div class="member__overlay">
+							<div class="member__bottom">
+								<div class="member__info">Начал работу с криптовалютами и блокчейном в 2015 году. Организовал производство и продажу майнингового оборудования, работу крупного Дата-центра для майнинга криптовалют на территории Польши. До этого работал техническим экспертом по внедрению и поддержке баз данных на больших производственных площадках.</div>
+							</div>
+						</div>
 					</div>
-					<div class="circle-item__text">Полностью <br> контролируете <br> ваши <br> инвестиции</div>
-				</li>
-				<li class="circle-item">
-					<div class="circle-item__text">Получаете до </div>
-					<div class="circle-item__value circle-item__value_big">12<sub>%</sub></div>
-					<div class="circle-item__text">от вложенных <br> средств в <br> месяц </div>
-				</li>
-			</ul>
-		</div>
-		
-		<p class="text">Но ZEUS EcoCryptoMining – не только генерация криптовалюты, а и продажа тепла, удобрений и вторичного сырья. Это устраняет риски, которые неизбежны при работе привычной майнинговой фермы. </p>
+				</div>
+				<div class="member__col">
+					<div class="member">
+						<div class="member__photo">
+							<img src="img/workers/mem2.jpg" alt="">
+						</div>
+						<div class="member__name">Александр Пилипенко</div>
+						<div class="member__position">СЕО</div>
 	
-		<button class="join-btn join-btn_mb-mid join-btn_bl js-join-btn">Узнайте подробности</button>
+						<div class="member__overlay">
+							<div class="member__bottom">
+								<div class="member__info">С 2003 года принимает участие в разработке и реализации проектов тяжёлой промышленности, утилизации отходов и энергетики.  В 2007 году  успешно создал и управляет компанией в реальном секторе экономики, которая имеет высокие позиции на рынке энергетических ресурсов Украины и стран ЕС.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="member__col">
+					<div class="member">
+						<div class="member__photo">
+							<img src="img/workers/mem3.png" alt="">
+						</div>
+						<div class="member__name">Ирина Прохорова</div>
+						<div class="member__position">CFO</div>
+	
+						<div class="member__overlay">
+							<div class="member__bottom">
+								<div class="member__info">Опыт работы в области финансов более 12 лет. Специалист  по осуществлению финансовой деятельности предприятия, направленная на обеспечение финансовыми ресурсами, формирование и распределение доходов/расходов. Успешный  опыт  в области контроля за выполнением финансовых показателей, работа по привлечению заемных средств, изучение рынка кредитных ресурсов, ведение оперативного и управленческого учета.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="members members_2_col">
+				<div class="member__col">
+					<div class="member">
+						<div class="member__photo">
+							<img src="img/workers/mem4.png" alt="">
+						</div>
+						<div class="member__name">Алексей Карасёв</div>
+						<div class="member__position">СTО <br>Технический директор</div>
+	
+						<div class="member__overlay">
+							<div class="member__bottom">
+								<div class="member__info">С 2006 г. занимается  инсталляцией и управлением мусороперерабатывающих заводов на территории.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="member__col">
+					<div class="member">
+						<div class="member__photo">
+							<img src="img/workers/mem5.png" alt="">
+						</div>
+						<div class="member__name">Сергей Баев</div>
+						<div class="member__position">Escrow</div>
+	
+						<div class="member__overlay">
+							<div class="member__bottom">
+								<div class="member__info">Имеет большой опыт в предпродажной подготовке компаний и подготовке компаний к выпуску облигаций, партнёр компании корпоративного консалтинга. Имеет богатый опыт привлечения инвестиций и дальнейшей работы с инвесторами.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" id="id_road_plan" style="background-color: #252626; ">
+		<div class="row row_center">
+			<h2 class="title-h2 title-h2_white">ДОРОЖНАЯ КАРТА ПРОЕКТА</h2>
+	
+			<img class="simple-img" src="img/road_plan.png" alt="">
+		</div>
+	</section>
+	<section class="section" id="id_road_plan">
+		<div class="row row_center">
+			<h2 class="title-h2">НА ЧТО МЫ ПРИВЛЕКАЕМ СРЕДСТВА</h2>
+	
+			<img class="simple-img" src="img/factory.png" alt="">
+	
+			<div class="text text_divider">В ходе продажи токенов на ICO для реализации проекта ZEUS EcoCryptoMining <br> планируется собрать <span class="text_bold">41 620 тыс. Euro</span>, эквивалент в Ethereum. <br>Средства пойдут на приобретение земли, строительство зданий завода и майнинговой фермы, <br> комплектующих для сборки майнинговых мощностей на <span class="text_bold">18000 GPU</span>, закупку оборудования для переработки отходов, биогазовой установки, упаковочной линии, погрузочной техники.</div>
+	
+			<div class="text">Строительство, настройку и автоматизацию производственных процессов,<br>осуществляют компании с мировым именем:</div>
+	
+			<div class="companies">
+				<ul class="companies__list">
+					<li><img src="img/partner_1.png" alt=""></li>
+					<li><img src="img/partner_2.png" alt=""></li>
+					<li><img src="img/partner_3.png" alt=""></li>
+					<li><img src="img/partner_4.png" alt=""></li>
+				</ul>
+			</div>
+	
+			<div class="text">Кипрская холдинговая компания предоставит юридическому лицу в Германии займ в размере суммы инвестиций в опционы ZEUS Token, для осуществления проекта. </div>
+	
+			<div class="text">Во время всех этапов будет обеспечена онлайн-трансляция о ходе строительства. <br>Камеры будут размещены на территории строительной площадки, а затем на самом заводе.</div>
+	
+			<h4 class="title-h4">Проект характеризуется такими показателями доходности:</h4>
+	
+			<table class="table-indicators">
+				<tr>
+					<td>Расходы за 1 год</td>
+					<td>7 078 400 €</td>
+				</tr>
+				<tr>
+					<td>Общая сумма выручки</td>
+					<td>7 078 400 €</td>
+				</tr>
+				<tr>
+					<td>Годовая прибыль после налогов</td>
+					<td>20 175 744 € </td>
+				</tr>
+				<tr>
+					<td>Прибыль в месяц</td>
+					<td>1 681 312 €</td>
+				</tr>
+			</table>
+	
+			<div class="btn-wrap btn-wrap_pad">
+				<a href="" class="btn btn_orange btn_mid">ПОЛУЧИТЬ White paper</a>
+			</div>
+	
+		</div>
+	</section>
+	<section class="section" id="id_proposition" style="background-color: #f7f7f7; ">
+		<div class="row row_center">
+			<h2 class="title-h2">ПРЕДЛОЖЕНИЕ ДЛЯ ИНВЕСТОРОВ</h2>
+	
+			<div class="text text_mg_top">Всего будет выпущено 61 000 тыс. ZEUS Tokens, которые распределены следующим образом: </div>
+	
+			<img class="simple-img" src="img/diagram.png" alt="">
+	
+			<h4 class="title-h4 title-h4_upper">Количество токенов для инвесторов будет реализовано так:</h4>
+	
+			<table class="table-indicators table-indicators_wide">
+				<tr>
+					<td></td>
+					<td>PRE ICO</td>
+					<td class="right-align">500 тыс. ZEUS Tokens</td>
+					<td class="right-align">0.50€ за 1 ZEUS Token</td>
+				</tr>
+				<tr>
+					<td class="right-align">1-7</td>
+					<td>день ICO</td>
+					<td class="right-align">5 000 тыс. ZEUS Tokens</td>
+					<td class="right-align">0.70€ за 1 ZEUS Token</td>
+				</tr>
+				<tr>
+					<td class="right-align">8-14</td>
+					<td>день ICO</td>
+					<td class="right-align">10 000 тыс. ZEUS Tokens</td>
+					<td class="right-align">0.80€ за 1 ZEUS Token</td>
+				</tr>
+				<tr>
+					<td class="right-align">15-22</td>
+					<td>день ICO</td>
+					<td class="right-align">15 000 тыс. ZEUS Tokens</td>
+					<td class="right-align">0.85€ за 1 ZEUS Token</td>
+				</tr>
+				<tr>
+					<td class="right-align">23-29</td>
+					<td>день ICO</td>
+					<td class="right-align">18 800 тыс. ZEUS Tokens</td>
+					<td class="right-align">0.90€ за 1 ZEUS Token</td>
+				</tr>
+				<tr>
+					<td class="cell-bold" colspan="3">
+						<div class="cell-bold-border">
+							<span class="left-align">Всего</span>
+							<span class="float-right">48 800 тыс. ZEUS Tokens</span>
+						</div>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+	
+			<div class="text">Выкуп токенов осуществляется ежеквартально из расчета 4 000 тыс. ZEUS Tokens в квартал,<br>15 выплат в течение 45 месяцев по базовой стоимости 1€/1ZT, которая рассчитана исходя из курса до 350€\ETH, если курс станет выше, то токены будут выкупаться дороже: </div>
+	
+			<img class="simple-img simple-img_no_mg w800" src="img/graphic.svg" alt="">
+	
+		</div>
+	</section>
+	<section class="section" id="id_profit" style="background-color: #252626; ">
+		<div class="row row_center">
+			<h2 class="title-h2 title-h2_white">Итак, вы убедились, что участие в проекте выгоднее чем:</h2>
+	
+			<div class="features features_wide">
+				<ul class="features__list">
+					<li class="feature feature_wide">
+						<div class="feature__inner">
+							<div class="feature__img feature__img_big ">
+								<img src="img/cloud.png" alt="">
+							</div>
+							<div class="feature__text feature__text_white">Вложиться в очередную ферму или облачный майнинг</div>
+						</div>
+					</li>
+					<li class="feature feature_wide">
+						<div class="feature__inner">
+							<div class="feature__img feature__img_big">
+								<img src="img/magnifier.png" alt="">
+							</div>
+							<div class="feature__text feature__text_white">Рисковать, изучая <br> 100 500 <br> «хайповых» проектов</div>
+						</div>
+					</li> 
+					<li class="feature feature_wide">
+						<div class="feature__inner">
+							<div class="feature__img feature__img_big">
+								<img src="img/trend.png" alt="">
+							</div>
+							<div class="feature__text feature__text_white">Бояться убытков <br> от курсовых <br> скачков на биржах <br> криптовалют</div>
+						</div>
+					</li> 
+				</ul>
+			</div>
+	
+			<div class="text text_mg text_center text_white">А кроме этого, вы не только гарантированно окупаете вложенные средства в зеленое производство, содействуя развитию мировой криптоэкономики, но и делаете нашу планету чище. </div>
+	
+			<div class="btn-wrap btn-wrap_pad">
+				<button class="btn btn_mod btn_orange">УЗНАЙТЕ О СТАРТЕ PRE ICO</button>
+			</div>
+	
+		</div>
 	</section>
 </div>
 <!-- END out-->

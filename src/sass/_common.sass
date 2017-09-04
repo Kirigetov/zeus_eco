@@ -41,16 +41,35 @@ body
 	max-width: 980px
 	margin: 0 auto
 	padding: 0 10px
+	&_center
+		text-align: center
 
 .title-h2
-	margin-bottom: 30px
+	margin-bottom: 5px
 	text-transform: uppercase
 	color: #000
 	font-size: 30px
 	text-align: center
+	&_white
+		color: #FFF 
+
+.title-h3
+	font-weight: normal
+	font-size: 18px 
+	text-align: center
+	&_white
+		color: #FFF 
+
+.title-h4
+	margin-top: 30px 
+	margin-bottom: 20px
+	&_upper
+		text-transform: uppercase 
 
 .btn-wrap
 	text-align: center
+	&_pad
+		padding: 20px 0
 	&_abs
 		position: absolute
 		top: -63px		
@@ -60,7 +79,6 @@ body
 .btn
 	height: 60px
 	padding: 8px 55px 9px
-	line-height: 60px
 	text-align: center
 	color: #fff
 	font-size: 26px
@@ -70,9 +88,47 @@ body
 	text-decoration: none
 	background-clip: padding-box
 	transition: background-color 0.3s
+	background-color: #FAA620 
 	&_green
 		background-color: #29b948
 		&:hover
 			background-color: darken(#29b948, 10%)
 	&_border
 		border: 7px solid rgba(#000, 0.5)
+	&_mod
+		padding: 13px 75px 13px
+		color: #000 
+	&_mid
+		height: 40px 
+		padding: 5px 15px 
+		font-size: 24px 
+
+.text
+	margin-bottom: 20px 
+	&_center
+		text-align: center
+	&_orange
+		color: #faa620 
+	&_white
+		color: #FFF 
+	&_bold
+		font-size: 24px 
+		+mm
+	&_mg
+		margin-bottom: 50px 
+	&_mg_top
+		margin-top: 30px
+		margin-bottom: 0 
+	&_divider
+		position: relative
+		margin-bottom: 40px 
+		&:after
+			content: "" 
+			position: absolute
+			left: 50%
+			top: 100% 
+			margin-top: 20px 
+			transform: translateX(-50%)
+			width: 200px
+			height: 3px
+			background-color: #2ab747 

@@ -1,0 +1,50 @@
+
+.features
+	max-width: 700px 
+	margin: 40px auto 0
+	&_wide
+		max-width: 900px 
+		margin: 40px auto 20px
+	&__list
+		font-size: 0 
+
+.feature
+	position: relative
+	margin-bottom: 15px 
+	color: #000
+	text-align: center
+	display: inline-block
+	vertical-align: top 
+	width: 33.3%
+	margin-bottom: 60px
+	&__inner
+		max-width: 160px 
+		margin: 0 auto 
+	+r(767)
+		margin-bottom: 25px
+	&__img
+		position: relative
+		margin-bottom: 13px 
+		min-height: 75px 
+		height: 1px 
+		text-align: center
+		vertical-align: middle
+		font-size: 0
+		&_big
+			min-height: 130px  
+		&:before
+			content: "" 
+			display: inline-block
+			height: 100% 
+			vertical-align: middle 
+			width: 0 
+	&__text
+		font-size: 18px 
+		line-height: 1.3 
+		&_white
+			color: #FFF 
+			font-size: 25px
+
+.feature_wide
+	.feature__inner
+		max-width: 250px 
