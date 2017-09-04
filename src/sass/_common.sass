@@ -28,11 +28,18 @@
 // =book
 // 	font-family: "book", Arial, sans-serif
 
+html, 
+body
+	height: 100%
+	min-height: 100%
+
 body
 	+mt
 	font-size: 18px
 	line-height: 1.4
 	color: #000
+	&.popup-open
+		overflow: hidden
 
 // common blocks
 
@@ -132,3 +139,26 @@ body
 			width: 200px
 			height: 3px
 			background-color: #2ab747 
+
+.scroll-top
+	position: fixed
+	bottom: 25px
+	right: 30px
+	width: 50px
+	height: 50px
+	background: none
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 11px
+	color: #fff
+	transition: background 0.3s
+	display: none
+	box-shadow: 0 0 5px rgba(#000, 0.5) 
+	border-radius: 50%
+	+r(1024)
+		right: 20px
+	&:before
+		content: "" 
+		display: inline-block
+		+s('arrowUp')
+	&.is-visible
+		display: block

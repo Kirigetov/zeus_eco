@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Zeus</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=1060px">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#fff">
 	<link rel="stylesheet" media="all" href="css/style.css" >
@@ -29,15 +29,15 @@
 	
 					<ul class="nav__list">
 	
-						<li class="nav__item"><a class="nav__link" href="">О технологии</a></li>
+						<li class="nav__item"><a class="nav__link js-nav-link" href="#about">О технологии</a></li>
 	
-						<li class="nav__item"><a class="nav__link" href="">Команда</a></li>
+						<li class="nav__item"><a class="nav__link js-nav-link" href="#team">Команда</a></li>
 	
-						<li class="nav__item"><a class="nav__link" href="">Дорожная карта</a></li>
+						<li class="nav__item"><a class="nav__link js-nav-link" href="#road_map">Дорожная карта</a></li>
 	
-						<li class="nav__item"><a class="nav__link" href="">Инвесторам</a></li>
+						<li class="nav__item"><a class="nav__link js-nav-link" href="#propositions">Инвесторам</a></li>
 	
-						<li class="nav__item"><a class="nav__link" href="">ZEUS token</a></li>
+						<li class="nav__item"><a class="nav__link js-nav-link" href="#zeus_tockens">ZEUS token</a></li>
 	
 					</ul>
 	
@@ -93,7 +93,7 @@
 	
 				<div class="btn-wrap btn-wrap_abs">
 	
-					<button class="btn btn_border btn_green">регистрация</button>
+					<button class="btn btn_border btn_green js-join-btn">регистрация</button>
 	
 				</div>
 	
@@ -114,7 +114,7 @@
 	</section>
 	
 	
-	<section class="section" >
+	<section class="section" id="about">
 		<div class="row">
 			<h2 class="title-h2">Вы, наверное, слышали, что:</h2>
 			
@@ -181,7 +181,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section_video" id="head" style="background-image: url(img/poster.png);">
+	<section class="section section_video" style="background-image: url(img/poster.png);">
 		<div class="section__top section__top_bg">
 			<div class="row">
 				<h2 class="title-h2 title-h2_white">Почему эта концепция реализуется</h2>
@@ -195,7 +195,7 @@
 			</a>
 		</div>
 	</section>
-	<section class="section" id="id_team">
+	<section class="section" id="team">
 		<div class="row ">
 			<h2 class="title-h2 title-h2_green">Кто в нашей команде:</h2>
 			
@@ -280,14 +280,14 @@
 			</div>
 		</div>
 	</section>
-	<section class="section" id="id_road_plan" style="background-color: #252626; ">
+	<section class="section" id="road_map" style="background-color: #252626; ">
 		<div class="row row_center">
 			<h2 class="title-h2 title-h2_white">ДОРОЖНАЯ КАРТА ПРОЕКТА</h2>
 	
 			<img class="simple-img" src="img/road_plan.png" alt="">
 		</div>
 	</section>
-	<section class="section" id="id_road_plan">
+	<section class="section" id="propositions" >
 		<div class="row row_center">
 			<h2 class="title-h2">НА ЧТО МЫ ПРИВЛЕКАЕМ СРЕДСТВА</h2>
 	
@@ -337,7 +337,7 @@
 	
 		</div>
 	</section>
-	<section class="section" id="id_proposition" style="background-color: #f7f7f7; ">
+	<section class="section" id="zeus_tockens" style="background-color: #f7f7f7; ">
 		<div class="row row_center">
 			<h2 class="title-h2">ПРЕДЛОЖЕНИЕ ДЛЯ ИНВЕСТОРОВ</h2>
 	
@@ -439,5 +439,33 @@
 	</section>
 </div>
 <!-- END out-->
+
+	<!-- BEGIN BUTTON TO UP -->
+	<button class="scroll-top js-scroll-top" type="button"><span></span></button>
+	<!-- END BUTTON TO UP -->
+
+	<!-- BEGIN popup -->
+	<div class="popup">
+		<div class="popup__close-btn js-close-popup">X</div>
+		<div class="popup__inner">
+			<div class="contacts">
+				<form action="">
+					<div class="field js-field">
+						<input type="text" class="input js-input"  placeholder="Имя ">
+					</div>							
+					<div class="field js-field">
+						<input type="text" class="input js-input"  placeholder="E-mail ">
+					</div>							
+					<div class="field js-field">
+						<input type="text" class="input js-input"  placeholder="Телефон ">
+					</div>							
+
+					<button class=""><span>Отправить!</span></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- END popup -->
+
 </body>
 </html>

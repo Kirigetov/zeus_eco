@@ -38,7 +38,10 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 @font-face { font-family: museo-thin; src: url("fonts/museosanscyrl_300-webfont.eot"); src: url("fonts/museosanscyrl_300-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_300-webfont.woff2") format("woff2"), url("fonts/museosanscyrl_300-webfont.woff") format("woff"), url("fonts/museosanscyrl_300-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: museo-medium; src: url("fonts/museosanscyrl_500-webfont.eot"); src: url("fonts/museosanscyrl_500-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_500-webfont.woff2") format("woff2"), url("fonts/museosanscyrl_500-webfont.woff") format("woff"), url("fonts/museosanscyrl_500-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: museo-bold; src: url("fonts/museosanscyrl_700-webfont.eot"); src: url("fonts/museosanscyrl_700-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_700-webfont.woff2") format("woff2"), url("fonts/museosanscyrl_700-webfont.woff") format("woff"), url("fonts/museosanscyrl_700-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+html, body { height: 100%; min-height: 100%; }
+
 body { font-family: "museo-thin", Arial, sans-serif; font-size: 18px; line-height: 1.4; color: #000; }
+body.popup-open { overflow: hidden; }
 
 .row { position: relative; max-width: 980px; margin: 0 auto; padding: 0 10px; }
 .row_center { text-align: center; }
@@ -72,6 +75,10 @@ body { font-family: "museo-thin", Arial, sans-serif; font-size: 18px; line-heigh
 .text_mg_top { margin-top: 30px; margin-bottom: 0; }
 .text_divider { position: relative; margin-bottom: 40px; }
 .text_divider:after { content: ""; position: absolute; left: 50%; top: 100%; margin-top: 20px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 200px; height: 3px; background-color: #2ab747; }
+
+.scroll-top { position: fixed; bottom: 25px; right: 30px; width: 50px; height: 50px; background: none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #fff; -webkit-transition: background 0.3s; transition: background 0.3s; display: none; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); border-radius: 50%; }
+.scroll-top:before { content: ""; display: inline-block; background-image: url("../img/icons.png"); width: 50px; height: 50px; background-position: -212px -73px; }
+.scroll-top.is-visible { display: block; }
 
 .section { position: relative; padding: 30px 0; }
 .section_main { background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; }
@@ -188,8 +195,19 @@ body { font-family: "museo-thin", Arial, sans-serif; font-size: 18px; line-heigh
 .member__mail { -webkit-transition: opacity 0.15s; transition: opacity 0.15s; }
 .member__mail:hover { opacity: 0.7; }
 .member__info { font-size: 14px; color: #000; line-height: 1.2; max-width: 280px; margin: 0 auto; }
+
+.popup { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none; }
+.popup.is-open { display: block; }
+.popup__inner { position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); padding: 40px 50px 60px; max-width: 435px; width: 90%; text-align: center; font-size: 0; z-index: 999; opacity: 0.95; background-color: white; border-radius: 2px; -webkit-box-shadow: 0 0 38px rgba(20, 20, 21, 0.2); box-shadow: 0 0 38px rgba(20, 20, 21, 0.2); }
+.popup__inner:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.popup__close-btn { position: absolute; top: 30px; right: 50px; display: inline-block; width: 20px; height: 20px; font-weight: bold; font-size: 36px; }
+.popup .field { margin-bottom: 20px; }
+.popup input { height: 50px; line-height: 50px; border-bottom: 1px solid rgba(0, 0, 0, 0.7); width: 100%; font-size: 17px; color: rgba(0, 0, 0, 0.7); }
+.popup button { margin-top: 30px; min-width: 226px; padding: 10px 20px; background-color: #093; border: 1px solid rgba(1, 2, 2, 0.07); -webkit-box-shadow: 5.5px 9.5px 20px rgba(20, 20, 21, 0.08); box-shadow: 5.5px 9.5px 20px rgba(20, 20, 21, 0.08); font-size: 27px; text-transform: uppercase; color: #FFF; border-radius: 24px; cursor: pointer; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
+@media only screen and (max-width: 1024px){
+ .scroll-top{ right: 20px; } }
 @media only screen and (max-width: 1023px){
  .members{ display: block; margin: 30px 0 -20px; }
  .member__col{ display: inline-block; width: 50%; margin-bottom: 60px; }
