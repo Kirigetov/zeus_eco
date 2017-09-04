@@ -1,0 +1,92 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+input[type="submit"], button { cursor: pointer; }
+
+div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+html { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+@font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
+
+.icon-mail:before { content: ""; }
+
+.icon-telegram:before { content: ""; }
+
+.icon-viber:before { content: ""; }
+
+.icon-whatsapp:before { content: ""; }
+
+@font-face { font-family: museo-thin; src: url("fonts/museosanscyrl_300-webfont.eot"); src: url("fonts/museosanscyrl_300-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_300-webfont.woff2") format("woff2"), url("fonts/museosanscyrl_300-webfont.woff") format("woff"), url("fonts/museosanscyrl_300-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: museo-medium; src: url("fonts/museosanscyrl_500-webfont.eot"); src: url("fonts/museosanscyrl_500-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_500-webfont.woff2") format("woff2"), url("fonts/museosanscyrl_500-webfont.woff") format("woff"), url("fonts/museosanscyrl_500-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: museo-bold; src: url("fonts/museosanscyrl_700-webfont.eot"); src: url("fonts/museosanscyrl_700-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_700-webfont.woff2") format("woff2"), url("fonts/museosanscyrl_700-webfont.woff") format("woff"), url("fonts/museosanscyrl_700-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { font-family: "museo-thin", Arial, sans-serif; font-size: 18px; line-height: 1.4; color: #000; }
+
+.row { position: relative; max-width: 980px; margin: 0 auto; padding: 0 10px; }
+
+.title-h2 { margin-bottom: 30px; text-transform: uppercase; color: #000; font-size: 30px; text-align: center; }
+
+.btn-wrap { text-align: center; }
+.btn-wrap_abs { position: absolute; top: -63px; left: 0; right: 0; }
+
+.btn { height: 60px; padding: 8px 55px 9px; line-height: 60px; text-align: center; color: #fff; font-size: 26px; font-family: "museo-medium", Arial, sans-serif; border-radius: 30px; text-transform: uppercase; text-decoration: none; background-clip: padding-box; -webkit-transition: background-color 0.3s; transition: background-color 0.3s; }
+.btn_green { background-color: #29b948; }
+.btn_green:hover { background-color: #208f38; }
+.btn_border { border: 7px solid rgba(0, 0, 0, 0.5); }
+
+.section_top { background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; }
+
+.main-logo { max-width: 800px; margin: 0 auto; padding: 165px 0 195px; }
+.main-logo__inner { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.main-logo span { font-size: 35px; color: #000; font-family: "museo-bold", Arial, sans-serif; text-transform: uppercase; }
+.main-logo img { width: 240px; }
+
+.reg-info { position: absolute; left: 0; right: 0; bottom: 0; text-align: center; }
+
+.messengers { margin-bottom: 40px; }
+.messengers a { display: inline-block; padding: 0 10px; color: #fff; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; }
+.messengers a:hover { opacity: 0.6; }
+
+.icon-viber, .icon-whatsapp, .icon-telegram { font-size: 45px; text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4); }
+
+.icon-mail { font-size: 40px; text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4); }
+
+.sign-up { height: 100px; padding-top: 35px; background: rgba(0, 0, 0, 0.5); color: #fff; text-align: center; }
+.sign-up .upper-text { font-size: 24px; }
+
+.upper-text { text-transform: uppercase; }
+
+.header { height: 60px; background: rgba(0, 0, 0, 0.5); }
+
+.logo { float: left; width: 100px; }
+.logo a { color: #fff; text-transform: uppercase; font-size: 48px; font-family: "museo-bold", Arial, sans-serif; text-decoration: none; }
+
+.nav { float: right; }
+.nav__list { font-size: 0; }
+.nav__item { display: inline-block; vertical-align: top; }
+.nav__link { position: relative; display: inline-block; padding: 18px 15px 14px; font-size: 20px; color: #fff; text-decoration: none; -webkit-transition: background 0.3s; transition: background 0.3s; }
+.nav__link:hover { background: rgba(255, 255, 255, 0.25); }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+ *{ -webkit-text-size-adjust: none; } }
+
+
+
+/*# sourceMappingURL=style.css.map */

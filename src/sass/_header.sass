@@ -1,0 +1,31 @@
+.header
+	height: 60px
+	background: rgba(#000, 0.5)
+
+.logo
+	float: left
+	width: 100px
+	a
+		color: #fff
+		text-transform: uppercase
+		font-size: 48px
+		+mb
+		text-decoration: none
+
+.nav
+	float: right
+	&__list
+		font-size: 0
+	&__item
+		display: inline-block
+		vertical-align: top
+	&__link
+		position: relative
+		display: inline-block
+		padding: 18px 15px 14px
+		font-size: 20px
+		color: #fff
+		text-decoration: none
+		transition: background 0.3s
+		&:hover
+			background: rgba(#fff, 0.25)
