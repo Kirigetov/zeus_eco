@@ -5,10 +5,12 @@
 	font-weight: normal
 	font-style: normal
 
-$icon-mail: "\EA01"
-$icon-telegram: "\EA02"
-$icon-viber: "\EA03"
-$icon-whatsapp: "\EA04"
+$icon-facebook: "\EA01"
+$icon-in: "\EA02"
+$icon-mail: "\EA03"
+$icon-slack: "\EA04"
+$icon-telegram: "\EA05"
+$icon-tw: "\EA06"
 
 
 %icon
@@ -25,11 +27,15 @@ $icon-whatsapp: "\EA04"
 	@extend %icon
 	display: inline-block
 
+.icon-facebook:before
+	content: $icon-facebook
+.icon-in:before
+	content: $icon-in
 .icon-mail:before
 	content: $icon-mail
+.icon-slack:before
+	content: $icon-slack
 .icon-telegram:before
 	content: $icon-telegram
-.icon-viber:before
-	content: $icon-viber
-.icon-whatsapp:before
-	content: $icon-whatsapp
+.icon-tw:before
+	content: $icon-tw

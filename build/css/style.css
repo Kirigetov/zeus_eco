@@ -27,13 +27,17 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
 
-.icon-mail:before { content: ""; }
+.icon-facebook:before { content: ""; }
 
-.icon-telegram:before { content: ""; }
+.icon-in:before { content: ""; }
 
-.icon-viber:before { content: ""; }
+.icon-mail:before { content: ""; }
 
-.icon-whatsapp:before { content: ""; }
+.icon-slack:before { content: ""; }
+
+.icon-telegram:before { content: ""; }
+
+.icon-tw:before { content: ""; }
 
 @font-face { font-family: museo-thin; src: url("fonts/museosanscyrl_300-webfont.eot"); src: url("fonts/museosanscyrl_300-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_300-webfont.woff2") format("woff2"), url("fonts/museosanscyrl_300-webfont.woff") format("woff"), url("fonts/museosanscyrl_300-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: museo-medium; src: url("fonts/museosanscyrl_500-webfont.eot"); src: url("fonts/museosanscyrl_500-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_500-webfont.woff2") format("woff2"), url("fonts/museosanscyrl_500-webfont.woff") format("woff"), url("fonts/museosanscyrl_500-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
@@ -93,12 +97,16 @@ body.popup-open { overflow: hidden; }
 .reg-info { position: absolute; left: 0; right: 0; bottom: 0; text-align: center; }
 
 .messengers { margin-bottom: 40px; }
-.messengers a { display: inline-block; padding: 0 10px; color: #fff; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; }
+.messengers a { display: inline-block; padding: 0 5px; color: #fff; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; }
 .messengers a:hover { opacity: 0.6; }
 
-.icon-viber, .icon-whatsapp, .icon-telegram { font-size: 45px; text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4); }
+.icon-facebook, .icon-tw, .icon-in, .icon-slack, .icon-telegram, .icon-mail { font-size: 45px; text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4); }
 
-.icon-mail { font-size: 40px; text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4); }
+.icon-tw { font-size: 41px; }
+
+.icon-in { font-size: 44px; }
+
+.icon-mail { font-size: 40px; }
 
 .sign-up { height: 100px; padding-top: 35px; background: rgba(0, 0, 0, 0.5); color: #fff; text-align: center; }
 .sign-up .upper-text { font-size: 24px; }
@@ -196,7 +204,7 @@ body.popup-open { overflow: hidden; }
 .member__mail:hover { opacity: 0.7; }
 .member__info { font-size: 14px; color: #000; line-height: 1.2; max-width: 280px; margin: 0 auto; }
 
-.popup { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none; }
+.popup { display: none; }
 .popup.is-open { display: block; }
 .popup__inner { position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); padding: 40px 50px 60px; max-width: 435px; width: 90%; text-align: center; font-size: 0; z-index: 999; opacity: 0.95; background-color: white; border-radius: 2px; -webkit-box-shadow: 0 0 38px rgba(20, 20, 21, 0.2); box-shadow: 0 0 38px rgba(20, 20, 21, 0.2); }
 .popup__inner:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
