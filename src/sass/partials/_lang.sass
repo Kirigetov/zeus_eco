@@ -1,0 +1,51 @@
+.lang
+	position: absolute
+	top: 5px
+	right: 20px
+	display: inline-block 
+	text-align: center
+	&:hover
+		.lang__list
+			visibility: visible
+			opacity: 1
+	&__current,
+	&__link
+		display: block
+		text-decoration: none 
+		padding: 15px 0
+		font-size: 18px
+		color: #252525
+	&__current
+		color: #fff 
+		position: relative
+		.lang__link
+			padding: 0  
+		&:after 
+			content: "" 
+			display: inline-block
+			width: 14px 
+			margin-bottom: -1px
+			margin-left: 3px 
+	&__link
+		background: #FFF 
+		transition: background 0.2s
+		cursor: pointer
+		&:hover
+			background: #e1e1e1
+		&:active
+			color: #009933 
+	&__list
+		position: relative
+		margin-top: -2px 
+		z-index: 10 
+		visibility: hidden
+		opacity: 0
+		transition: opacity 0.2s
+	li
+		width: 70px 
+	&__arrow
+		position: absolute
+		top: 19px
+		right: 7px
+		color: #fff
+		font-size: 13px

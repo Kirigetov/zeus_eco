@@ -14,18 +14,40 @@
 
 .nav
 	float: right
+	margin-right: 90px
+	height: 60px
 	&__list
 		font-size: 0
+		height: 100%
 	&__item
 		display: inline-block
 		vertical-align: top
+		font-size: 0
+		height: 100%
+
 	&__link
 		position: relative
 		display: inline-block
-		padding: 18px 15px 14px
+		vertical-align: middle
+		padding: 18px 11px 14px
+		height: 100%
 		font-size: 20px
 		color: #fff
 		text-decoration: none
 		transition: background 0.3s
+		&:before
+			content: ''
+			display: inline-block
+			height: 100%
+			vertical-align: middle
+			width: 0
 		&:hover
 			background: rgba(#fff, 0.25)
+		&_sm
+			max-width: 190px
+			font-size: 17px
+			padding: 0 11px
+		span
+			vertical-align: middle
+			display: inline-block
+			

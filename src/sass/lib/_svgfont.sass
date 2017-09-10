@@ -5,12 +5,13 @@
 	font-weight: normal
 	font-style: normal
 
-$icon-facebook: "\EA01"
-$icon-in: "\EA02"
-$icon-mail: "\EA03"
-$icon-slack: "\EA04"
-$icon-telegram: "\EA05"
-$icon-tw: "\EA06"
+$icon-arrow_down: "\EA01"
+$icon-facebook: "\EA02"
+$icon-in: "\EA03"
+$icon-mail: "\EA04"
+$icon-slack: "\EA05"
+$icon-telegram: "\EA06"
+$icon-tw: "\EA07"
 
 
 %icon
@@ -27,6 +28,8 @@ $icon-tw: "\EA06"
 	@extend %icon
 	display: inline-block
 
+.icon-arrow_down:before
+	content: $icon-arrow_down
 .icon-facebook:before
 	content: $icon-facebook
 .icon-in:before
