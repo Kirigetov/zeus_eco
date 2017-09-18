@@ -32,13 +32,14 @@ $(document).ready(function() {
 
 	    $("#play-video.video").click(function(e){
 	    	e.preventDefault();
+            var videoUrl = $(this).data("video");
 
-	        $('#team').addClass('is-transparent');
+	        $('#section-video').addClass('is-transparent');
 
 	        player = new YT.Player('player', {
 	            width : '100%',
 	            height : '100%',
-	            videoId : 'wer1t1nFOPY',
+	            videoId : videoUrl,
 	            playerVars: { 'autoplay': 1 },
 	            events : {
 	                'onReady' : onPlayerReady,
@@ -59,7 +60,7 @@ $(document).ready(function() {
     function onPlayerStateChange(event) {
         if(event.data == YT.PlayerState.ENDED) {
             player.destroy();
-            $('#team').removeClass('is-transparent');
+            $('#section-video').removeClass('is-transparent');
         }
     }
 

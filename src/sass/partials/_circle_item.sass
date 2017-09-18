@@ -3,6 +3,15 @@
 	margin-right: -20px 
 	text-align: center
 
+.circle-items
+	&_4
+		max-width: 860px
+		margin: 0 auto
+		.circle-item
+			margin-bottom: 20px
+			&:not(:last-child)
+				margin-right: 20px
+
 .circle-item
 	display: inline-flex
 	vertical-align: top
@@ -24,12 +33,20 @@
 		color: #000 
 		&_mt
 			margin-top: -20px
+		&_sm
+			font-size: 14px
 	&__value
 		padding: 5px 0
 		color: #24bc52
 		line-height: 1.1
 		&_big
-			font-size: 28px
+			font-size: 30px
+			+mb
+		&_sbig
+			font-size: 36px
+			+mb
+		&_mid
+			font-size: 26px
 			+mb
 	&__pic
 		margin-bottom: 10px 
