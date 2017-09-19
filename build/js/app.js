@@ -99,6 +99,12 @@ $(document).ready(function() {
         $('body').removeClass('popup-open');
     });
 
+    $(".popup").on("click", function (e) {
+        if ($(e.target).closest('.js-popup-inner').length) return;
+        $(".popup").removeClass('is-open');
+        $('body').removeClass('popup-open');
+    })
+
     // scroll button
     $(".js-scroll-top").on("click", function(){
         $('html, body').animate({

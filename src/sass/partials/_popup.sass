@@ -1,7 +1,8 @@
 .popup
-	// +coverdiv
-	// background-color: rgba(#fff, 0.8)
+	+coverdiv
+	background-color: rgba(#fff, 0.8)
 	display: none
+	z-index: 10000
 	&.is-open
 		display: block
 	&__inner
@@ -13,20 +14,26 @@
 		max-width: 435px 
 		width: 90% 
 		+vertical
-		z-index: 10000
 		opacity: 0.95
 		background-color: white
 		border-radius: 2px
 		box-shadow: 0 0 38px rgba(20, 20, 21, 0.2)
 	&__close-btn
 		position: absolute
-		top: 30px
-		right: 50px
+		top: -50px
+		right: -50px
 		display: inline-block
-		width: 20px
-		height: 20px
+		width: 50px
+		height: 50px
 		font-weight: bold
 		font-size: 36px
+		cursor: pointer
+		text-shadow: 0 0 5px rgba(20, 20, 21, 0.2)
+		&:before
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate3D(-50%, -50%, 0)
 	.field
 		margin-bottom: 20px
 	input

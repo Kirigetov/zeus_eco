@@ -29,17 +29,19 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-arrow_down:before { content: ""; }
 
-.icon-facebook:before { content: ""; }
+.icon-close:before { content: ""; }
 
-.icon-in:before { content: ""; }
+.icon-facebook:before { content: ""; }
 
-.icon-mail:before { content: ""; }
+.icon-in:before { content: ""; }
 
-.icon-slack:before { content: ""; }
+.icon-mail:before { content: ""; }
 
-.icon-telegram:before { content: ""; }
+.icon-slack:before { content: ""; }
 
-.icon-tw:before { content: ""; }
+.icon-telegram:before { content: ""; }
+
+.icon-tw:before { content: ""; }
 
 @font-face { font-family: museo-thin; src: url("fonts/museosanscyrl_300-webfont.eot"); src: url("fonts/museosanscyrl_300-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_300-webfont.woff2") format("woff2"), url("fonts/museosanscyrl_300-webfont.woff") format("woff"), url("fonts/museosanscyrl_300-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: museo-medium; src: url("fonts/museosanscyrl_500-webfont.eot"); src: url("fonts/museosanscyrl_500-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_500-webfont.woff2") format("woff2"), url("fonts/museosanscyrl_500-webfont.woff") format("woff"), url("fonts/museosanscyrl_500-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
@@ -48,6 +50,8 @@ html, body { height: 100%; min-height: 100%; }
 
 body { font-family: "museo-thin", Arial, sans-serif; font-size: 18px; line-height: 1.4; color: #000; }
 body.popup-open { overflow: hidden; }
+
+.out { position: relative; }
 
 .row { position: relative; max-width: 1080px; margin: 0 auto; padding: 0 10px; }
 .row_center { text-align: center; }
@@ -218,11 +222,12 @@ b { font-weight: bold; }
 .member__mail:hover { opacity: 0.7; }
 .member__info { font-size: 14px; color: #000; line-height: 1.2; max-width: 280px; margin: 0 auto; padding: 0 10px; }
 
-.popup { display: none; }
+.popup { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none; z-index: 10000; }
 .popup.is-open { display: block; }
-.popup__inner { position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); padding: 40px 50px 60px; max-width: 435px; width: 90%; text-align: center; font-size: 0; z-index: 10000; opacity: 0.95; background-color: white; border-radius: 2px; -webkit-box-shadow: 0 0 38px rgba(20, 20, 21, 0.2); box-shadow: 0 0 38px rgba(20, 20, 21, 0.2); }
+.popup__inner { position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); padding: 40px 50px 60px; max-width: 435px; width: 90%; text-align: center; font-size: 0; opacity: 0.95; background-color: white; border-radius: 2px; -webkit-box-shadow: 0 0 38px rgba(20, 20, 21, 0.2); box-shadow: 0 0 38px rgba(20, 20, 21, 0.2); }
 .popup__inner:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-.popup__close-btn { position: absolute; top: 30px; right: 50px; display: inline-block; width: 20px; height: 20px; font-weight: bold; font-size: 36px; }
+.popup__close-btn { position: absolute; top: -50px; right: -50px; display: inline-block; width: 50px; height: 50px; font-weight: bold; font-size: 36px; cursor: pointer; text-shadow: 0 0 5px rgba(20, 20, 21, 0.2); }
+.popup__close-btn:before { position: absolute; top: 50%; left: 50%; -webkit-transform: translate3D(-50%, -50%, 0); -ms-transform: translate3D(-50%, -50%, 0); transform: translate3D(-50%, -50%, 0); }
 .popup .field { margin-bottom: 20px; }
 .popup input { height: 50px; line-height: 50px; border-bottom: 1px solid rgba(0, 0, 0, 0.7); width: 100%; font-size: 17px; color: rgba(0, 0, 0, 0.7); }
 .popup button { margin-top: 30px; min-width: 226px; padding: 10px 20px; background-color: #093; border: 1px solid rgba(1, 2, 2, 0.07); -webkit-box-shadow: 5.5px 9.5px 20px rgba(20, 20, 21, 0.08); box-shadow: 5.5px 9.5px 20px rgba(20, 20, 21, 0.08); font-size: 27px; text-transform: uppercase; color: #FFF; border-radius: 24px; cursor: pointer; }
@@ -236,6 +241,8 @@ b { font-weight: bold; }
 .icon-mail { font-size: 40px; }
 
 .icon-facebook { font-size: 42px; }
+
+.icon-close { font-size: 30px; color: #093; }
 
 .lang { position: absolute; top: 0; right: 20px; display: inline-block; text-align: center; cursor: pointer; }
 .lang.is-open .lang__list { visibility: visible; opacity: 1; }
