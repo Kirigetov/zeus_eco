@@ -64,6 +64,17 @@ $(document).ready(function() {
         }
     }
 
+    $('.js-lang').on('click touchend', function() {
+        var parent = $(this).closest(".lang");
+
+        if ( !parent.hasClass("is-open")) {
+            parent.addClass("is-open");
+        } else {
+            parent.removeClass("is-open");
+        }
+
+    });
+
     $('.js-nav-link').on('click', function() {
         var section = $(this).attr('href');
         
