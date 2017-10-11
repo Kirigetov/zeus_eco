@@ -97,6 +97,7 @@ b { font-weight: bold; }
 .section_main { background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; }
 .section__top_bg { position: absolute; top: 0; left: 0; width: 100%; padding: 12px 0; background: rgba(0, 0, 0, 0.5); }
 .section_no_pad { padding: 0; }
+.section_pad { padding: 30px 0 40px; }
 
 .main-logo { max-width: 800px; margin: 0 auto; padding: 165px 0 195px; }
 .main-logo_lg { max-width: 900px; }
@@ -203,11 +204,15 @@ b { font-weight: bold; }
 .section_video.is-transparent { background-image: none !important; background-color: #000; }
 .section_video.is-transparent .icon-play { visibility: hidden; opacity: 0; }
 
-#play-video { position: relative; display: block; height: 0; padding-bottom: 56.5%; z-index: 1000; }
+#play-video { position: relative; display: block; height: 0; padding-bottom: 56.5%; }
+#play-video.hover-state { cursor: pointer; }
 #play-video.hover-state .icon-play { opacity: 0.7; }
 #play-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 .icon-play { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -30%); -ms-transform: translate(-50%, -30%); transform: translate(-50%, -30%); background-image: url("../img/icons.png"); width: 131px; height: 131px; background-position: 0px 0px; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; }
+
+.video-js { position: absolute !important; top: 0; right: 0; left: 0; bottom: 0; height: auto; width: auto; opacity: 0; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; }
+.is-play .video-js { opacity: 1; }
 
 .members { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; -webkit-align-items: stretch; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; width: 100%; margin: 50px 0; font-size: 0; }
 
@@ -257,6 +262,32 @@ b { font-weight: bold; }
 .lang__list { position: relative; margin-top: -2px; z-index: 10; visibility: hidden; opacity: 0; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
 .lang li { width: 70px; }
 .lang__arrow { position: absolute; top: 23px; right: 7px; color: #fff; font-size: 13px; }
+
+.road-container { max-width: 800px; margin: 0 auto; }
+
+.road-year { color: #a8a8a8; font-size: 30px; line-height: 50px; text-transform: uppercase; text-align: center; }
+
+.road-cols { font-size: 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; }
+
+.road-col { display: inline-block; width: 50%; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+.road-col:first-child { padding-right: 64px; border-right: 4px solid #a8a8a8; }
+.road-col:last-child { padding-left: 64px; }
+
+.road { position: relative; padding: 0 15px; }
+.road__arrow { position: absolute; top: 20px; height: 75px; width: 76px; }
+.road__arrow:before { content: ""; position: absolute; top: 50%; left: 0; height: 1px; width: 100%; margin-top: -1px; background-color: #a8a8a8; }
+.road__arrow_left { left: 100%; border-left: 1px solid #a8a8a8; }
+.road__arrow_left:after { content: ""; position: absolute; top: 50%; right: 0; height: 20px; width: 20px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); background-color: #a8a8a8; border-radius: 50%; border: 3px solid #252626; }
+.road__arrow_right { right: 100%; border-right: 1px solid #a8a8a8; }
+.road__arrow_right:after { content: ""; position: absolute; top: 50%; left: 0; height: 20px; width: 20px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); background-color: #a8a8a8; border-radius: 50%; border: 3px solid #252626; }
+.road__title { margin-bottom: 3px; color: #faa620; font-size: 25px; text-transform: uppercase; }
+.road__section { position: relative; }
+.road__section_border { padding: 15px 0; }
+.road__section_border:after { content: ""; position: absolute; top: 100%; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 105px; height: 1px; background-color: #a8a8a8; }
+.road__section_pad_top { padding-top: 15px; }
+.road__period { margin-bottom: 7px; color: white; font-size: 18px; }
+.road__info { color: white; font-size: 14px; }
+.road__info + .road__info { margin-top: 5px; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1024px){

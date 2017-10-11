@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=1060px">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#fff">
+	<link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
 	<link rel="stylesheet" media="all" href="css/style.css" >
 	<script src="js/app.js"></script>
 </head>
@@ -97,7 +98,7 @@
 	
 					<a href="https://t.me/joinchat/Cg9KDwhfwYZgztRVemWnwQ"><i class="icon-telegram"></i></a>
 	
-					<a href="https://zeus-official.slack.com"><i class="icon-slack"></i></a>
+					<a href="https://join.slack.com/t/zeus-official/shared_invite/enQtMjU0MzA0MTk5NjM2LTYxMGE2MWY0MWQzOTgyNmU1ZjY4ODM5OTE0ZGQzOTExYjc0YmU3NWY0YmYzZTBjMDg5ZDViNjM4Mzc1YTFmOTQ"><i class="icon-slack"></i></a>
 	
 					<a href="mailto:info@zeus-token.io"><i class="icon-mail"></i></a>
 	
@@ -207,11 +208,18 @@
 			</div>
 		</div>
 		<div class="row">
-			<a href="#" id="play-video" data-video="b2yUMjnyKpA" class="video">
+			<div id="play-video">
 				<i class="icon-play"></i>
-				<div id="player" class="home-player"></div>
-			</a> 
-		</div>
+				<video id="player" class="video-js js-player" controls preload="auto" width="100%" data-setup="{}">
+				    <source src="./videos/zeus.mp4" type='video/mp4'>
+				    <source src="./videos/zeus.webm" type='video/webm'>
+				    <p class="vjs-no-js">
+				      To view this video please enable JavaScript, and consider upgrading to a web browser that
+				      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+				    </p>
+				</video>
+			</div>
+		</div> 
 	</section>
 	<section class="section" id="team">
 		<div class="row ">
@@ -342,11 +350,73 @@
 			</div>
 		</div>
 	</section>
-	<section class="section" id="road_map" style="background-color: #252626; ">
+	<section class="section section_pad" id="road_map" style="background-color: #252626; ">
 		<div class="row row_center">
 			<h2 class="title-h2 title-h2_white">ДОРОЖНАЯ КАРТА ПРОЕКТА</h2>
 	
-			<img class="simple-img" src="img/road_plan.png" alt="">
+			<div class="road-container">
+				<div class="road-year">2017</div>
+				<div class="road-cols">
+					<div class="road-col">
+						<div class="road">
+							<div class="road__arrow road__arrow_left"></div>
+							<div class="road__title">СБОР СРЕДСТВ (ICO)</div>
+							<div class="road__section">
+								<div class="road__period">Ноябрь 2017 г. – январь 2018 г.</div>
+								<div class="road__info">Проведение ICO по приобретению токенов ZEUS Token с использованием Ethereum (ETH).</div>
+							</div>
+						</div>
+					</div>
+					<div class="road-col">&nbsp;</div>
+				</div>
+			</div>
+	
+			<div class="road-container">
+				<div class="road-year">2018</div>
+				<div class="road-cols">
+					<div class="road-col">&nbsp;</div>
+					<div class="road-col">
+						<div class="road">
+							<div class="road__arrow road__arrow_right"></div>
+							<div class="road__title">Производство</div>
+							<div class="road__section road__section_border">
+								<div class="road__period">Январь-февраль 2018 г.</div>
+								<div class="road__info">Покупка и аренда земли в промышленной зоне г. Дрезден, Германия. Проектирование и получение разрешительной документации.</div>
+							</div>
+							<div class="road__section road__section_border">
+								<div class="road__period">Март - август 2018 г.</div>
+								<div class="road__info">Строительство здания и производство промышленного оборудования для завода и майнинговых мощностей.</div>
+							</div>
+							<div class="road__section road__section_border">
+								<div class="road__period">Август - ноябрь 2018 г.</div>
+								<div class="road__info">Пуско-наладка промышленного оборудования и старт нового производства, закупка и сборка майнингового оборудования.</div>
+							</div>
+							<div class="road__section road__section_pad_top">
+								<div class="road__period">Ноябрь - декабрь 2018 г.</div>
+								<div class="road__info">Старт приемки и переработки мусора, отгрузки готовой продукции и добычи криптовалюты.</div>
+							</div>
+	
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="road-container">
+				<div class="road-cols">
+					<div class="road-col">
+						<div class="road">
+							<div class="road__arrow road__arrow_left"></div>
+							<div class="road__title">Обратный выкуп</div>
+							<div class="road__section">
+								<div class="road__period">Декабрь 2018 г.</div>
+								<div class="road__info">Обратный выкуп токенов.</div>
+								<div class="road__info">Выкуп будет производится ежемесячно, через месяц после ввода завода в эксплуатацию по 5 000 000 токенов.</div>
+							</div>
+						</div>
+					</div>
+					<div class="road-col">&nbsp;</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section class="section" id="propositions" >
@@ -355,7 +425,7 @@
 	
 			<img class="simple-img" src="img/factory.png" alt="">
 	
-			<div class="text text_divider">В ходе продажи токенов на ICO для реализации проекта ZEUS EcoCryptoMining <br> планируется собрать <span class="text_bold">41 620 тыс. Euro</span>, эквивалент в Ethereum. <br>Средства пойдут на приобретение земли, строительство зданий завода и майнинговой фермы, <br> комплектующих для сборки майнинговых мощностей, закупку оборудования для переработки отходов, упаковочной линии, погрузочной техники. <br> Мы принимаем средства не только в Ethereum, но и в Bitcoin.</div>
+			<div class="text text_divider">В ходе продажи токенов на ICO для реализации проекта ZEUS EcoCryptoMining <br> планируется собрать <span class="text_bold">41 620 тыс. Euro</span>, эквивалент в Ethereum. <br>Средства пойдут на приобретение земли, строительство зданий завода и майнинговой фермы, <br> комплектующих для сборки майнинговых мощностей, закупку оборудования для переработки отходов, упаковочной линии, погрузочной техники. <br> Мы привлекаем средства не только в Ethereum и Bitcoin, но и в Евро.</div>
 	
 			<div class="text">Строительство, настройку и автоматизацию производственных процессов,<br>осуществляют компании с мировым именем:</div>
 	
@@ -432,7 +502,7 @@
 					<td></td>
 					<td>PRE ICO</td>
 					<td class="right-align">1 000 тыс. ZEUS Tokens</td>
-					<td class="right-align">0.50€ за 1 ZEUS Token</td>
+					<td class="right-align">&nbsp;</td>
 				</tr>
 				<tr>
 					<td class="right-align">1-7</td>
@@ -480,7 +550,7 @@
 				</ul>
 			</div>
 	
-			<div class="text">Выкуп токенов осуществляется ежеквартально из расчета 5 000 тыс. ZEUS Tokens в квартал,<br>12 выплат в течение 12 месяцев по базовой стоимости 1€/1ZT, которая рассчитана исходя из курса <br> до 4000 € \ BTC, если курс станет выше, то токены будут выкупаться дороже: </div>
+			<div class="text">Выкуп токенов осуществляется ежемесячно из расчета 5 000 тыс. ZEUS Tokens в месяц,<br>12 выплат в течение 12 месяцев по базовой стоимости 1€/1ZT, которая рассчитана исходя из курса <br> до 4000 € \ BTC, если курс станет выше, то токены будут выкупаться дороже: </div>
 	
 			<img class="simple-img simple-img_no_mg w800" src="img/graphic.jpg" alt="">
 	

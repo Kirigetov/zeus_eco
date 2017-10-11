@@ -7,6 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#fff">
 	<link rel="stylesheet" media="all" href="../css/style.css" >
+	<link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
 	<script src="../js/app.js"></script>
 </head>
 <body>
@@ -98,7 +99,7 @@
 	
 					<a href="https://t.me/joinchat/Cg9KDwhfwYZgztRVemWnwQ"><i class="icon-telegram"></i></a>
 	
-					<a href="https://zeus-official.slack.com"><i class="icon-slack"></i></a>
+					<a href="https://join.slack.com/t/zeus-official/shared_invite/enQtMjU0MzA0MTk5NjM2LTYxMGE2MWY0MWQzOTgyNmU1ZjY4ODM5OTE0ZGQzOTExYjc0YmU3NWY0YmYzZTBjMDg5ZDViNjM4Mzc1YTFmOTQ"><i class="icon-slack"></i></a>
 	
 					<a href="mailto:info@zeus-token.io"><i class="icon-mail"></i></a>
 	
@@ -208,10 +209,17 @@
 			</div>
 		</div>
 		<div class="row">
-			<a href="#" id="play-video" data-video="b2yUMjnyKpA" class="video">
+			<div id="play-video">
 				<i class="icon-play"></i>
-				<div id="player" class="home-player"></div>
-			</a>
+				<video id="player" class="video-js js-player" controls preload="auto" width="100%" data-setup="{}">
+				    <source src="../videos/zeus_eng.mp4" type='video/mp4'>
+				    <source src="../videos/zeus_eng.webm" type='video/webm'>
+				    <p class="vjs-no-js">
+				      To view this video please enable JavaScript, and consider upgrading to a web browser that
+				      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+				    </p>
+				</video>
+			</div>
 		</div>
 	</section>
 	<section class="section" id="team">
@@ -343,11 +351,74 @@
 			</div>
 		</div>
 	</section>
-	<section class="section" id="road_map" style="background-color: #252626; ">
+
+	<section class="section section_pad" id="road_map" style="background-color: #252626; ">
 		<div class="row row_center">
 			<h2 class="title-h2 title-h2_white">Plan del desarrollo del proyecto</h2>
-	
-			<img class="simple-img" src="../img/road_plan_es.png" alt="">
+
+			<div class="road-container">
+				<div class="road-year">2017</div>
+				<div class="road-cols">
+					<div class="road-col">
+						<div class="road">
+							<div class="road__arrow road__arrow_left"></div>
+							<div class="road__title">Atracción de Fondos (ICO)</div>
+							<div class="road__section">
+								<div class="road__period">Noviembre 2017 - Enero 2018</div>
+								<div class="road__info">Organización de ICO para comprar tokens de ZEUS Token usando Ethereum (ETH).</div>
+							</div>
+						</div>
+					</div>
+					<div class="road-col">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="road-container">
+				<div class="road-year">2018</div>
+				<div class="road-cols">
+					<div class="road-col">&nbsp;</div>
+					<div class="road-col">
+						<div class="road">
+							<div class="road__arrow road__arrow_right"></div>
+							<div class="road__title">Producción</div>
+							<div class="road__section road__section_border">
+								<div class="road__period">Enero - Febrero 2018</div>
+								<div class="road__info">Compra y alquiler de terrenos en la zona industrial de Dresden, Alemania. Diseño y obtención de documentación permisiva.</div>
+							</div>
+							<div class="road__section road__section_border">
+								<div class="road__period">Marzo-agosto de 2018</div>
+								<div class="road__info">Construcción del edificio y producción de equipos industriales y capacidades mineras.</div>
+							</div>
+							<div class="road__section road__section_border">
+								<div class="road__period">Agosto - Noviembre 2018</div>
+								<div class="road__info">Puesta en marcha de equipos industriales y puesta en marcha de nueva producción, compra y montaje de equipos mineros.</div>
+							</div>
+							<div class="road__section road__section_pad_top">
+								<div class="road__period">Noviembre - Diciembre 2018</div>
+								<div class="road__info">Inicio de recepción y reciclaje de basura, envío de productos terminados y extracción de criptodivisa.</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="road-container">
+				<div class="road-cols">
+					<div class="road-col">
+						<div class="road">
+							<div class="road__arrow road__arrow_left"></div>
+							<div class="road__title">Recompra</div>
+							<div class="road__section">
+								<div class="road__period">Diciembre 2018</div>
+								<div class="road__info">Recompra de tokens inversa.</div>
+								<div class="road__info">La recompra se realizará mensualmente por 5.000.000 de tokens al mes después de la puesta en marcha de la fábrica.</div>
+							</div>
+						</div>
+					</div>
+					<div class="road-col">&nbsp;</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section class="section" id="propositions" >
@@ -356,7 +427,7 @@
 	
 			<img class="simple-img" src="../img/factory.png" alt="">
 	
-			<div class="text text_divider">Durante la venta de tokens en ICO,  para la ejecución del proyecto ZEUS EcoCryptoMining, se prevé recaudar <span class="text_bold">41.620 miles de euros</span>, el equivalente en Ethereum. Los fondos se destinarán a la adquisición de terrenos, construcción de edificios de fábrica y una la granja de minería, componentes para el montaje de capacidades mineras, compra de equipos para reciсlaje de residuos, línea de embalaje, equipo de carga. <br>Aceptamos los fondos no solamente en Ethereum sino también en Bitcoin.</div>
+			<div class="text text_divider">Durante la venta de tokens en ICO,  para la ejecución del proyecto ZEUS EcoCryptoMining, se prevé recaudar <span class="text_bold">41.620 miles de euros</span>, el equivalente en Ethereum. Los fondos se destinarán a la adquisición de terrenos, construcción de edificios de fábrica y una la granja de minería, componentes para el montaje de capacidades mineras, compra de equipos para reciсlaje de residuos, línea de embalaje, equipo de carga. <br>Aceptamos los fondos no solamente en Ethereum y en Bitcoin, sino también en Euro.</div>
 	
 			<div class="text">La construcción, configuración y automatización de los procesos de producción se llevan las empresas de reputación mundial:</div>
 	
@@ -435,7 +506,7 @@
 					<td></td>
 					<td>PRE ICO</td>
 					<td class="right-align">1 000 000 ZEUS Tokens</td>
-					<td class="right-align">0.50€ por 1 ZEUS Token</td>
+					<td class="right-align">&nbsp;</td>
 				</tr>
 				<tr>
 					<td class="right-align">1-7</td>

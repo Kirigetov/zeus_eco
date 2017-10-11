@@ -1,0 +1,103 @@
+.road-container
+	max-width: 800px
+	margin: 0 auto
+	// padding: 5px 0
+
+.road-year
+	color: #a8a8a8
+	font-size: 30px
+	line-height: 50px
+	text-transform: uppercase
+	text-align: center
+
+.road-cols
+	font-size: 0
+	display: flex
+	align-items: stretch
+
+.road-col
+	display: inline-block
+	width: 50%
+	flex: 1
+	&:first-child
+		padding-right: 64px
+		border-right: 4px solid #a8a8a8
+	&:last-child
+		padding-left: 64px
+
+.road
+	position: relative
+	padding: 0 15px	
+
+	&__arrow
+		position: absolute
+		top: 20px
+		height: 75px
+		width: 76px
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 0 
+			height: 1px
+			width: 100%
+			margin-top: -1px
+			background-color: #a8a8a8
+
+		&_left
+			left: 100%
+			border-left: 1px solid #a8a8a8
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				right: 0
+				height: 20px
+				width: 20px
+				transform: translateY(-50%)
+				background-color: #a8a8a8
+				border-radius: 50%
+				border: 3px solid #252626
+		&_right
+			right: 100%
+			border-right: 1px solid #a8a8a8
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 0
+				height: 20px
+				width: 20px
+				transform: translateY(-50%)
+				background-color: #a8a8a8
+				border-radius: 50%
+				border: 3px solid #252626
+	&__title
+		margin-bottom: 3px
+		color: #faa620
+		font-size: 25px
+		text-transform: uppercase
+	&__section
+		position: relative
+		&_border
+			padding: 15px 0
+			&:after
+				content: ''
+				position: absolute
+				top: 100%
+				left: 50%
+				transform: translateX(-50%)
+				width: 105px
+				height: 1px
+				background-color: #a8a8a8
+		&_pad_top
+			padding-top: 15px
+	&__period
+		margin-bottom: 7px
+		color: white
+		font-size: 18px
+	&__info
+		color: white
+		font-size: 14px
+		& + &
+			margin-top: 5px
