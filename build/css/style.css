@@ -52,6 +52,9 @@ body { font-family: "museo-thin", Arial, sans-serif; font-size: 18px; line-heigh
 body.popup-open { overflow: hidden; }
 
 .out { position: relative; }
+.out.jap h2, .out.jap h3, .out.jap h4, .out.jap p { font-weight: normal !important; }
+.out.jap .main-logo { max-width: 700px; }
+.out.jap .main-logo__inner { -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
 
 .row { position: relative; max-width: 1080px; margin: 0 auto; padding: 0 10px; }
 .row_center { text-align: center; }
@@ -107,7 +110,7 @@ b { font-weight: bold; }
 
 .reg-info { position: absolute; left: 0; right: 0; bottom: 0; text-align: center; }
 
-.messengers { margin-bottom: 40px; }
+.messengers { margin-bottom: 60px; }
 .messengers a { display: inline-block; padding: 0 5px; color: #fff; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; }
 .messengers a:hover { opacity: 0.6; }
 
@@ -133,6 +136,7 @@ b { font-weight: bold; }
 .table-indicators_mod tr th:nth-child(3), .table-indicators_mod tr th:nth-child(4), .table-indicators_mod tr td:nth-child(3), .table-indicators_mod tr td:nth-child(4) { text-align: right; }
 
 .table-indicators_wide { max-width: 850px; margin: 0 auto 30px; }
+.table-indicators_wide_b { max-width: 1000px; }
 .table-indicators_wide tr td:first-child { padding-right: 5px; border-top: none; text-align: right; }
 .table-indicators_wide tr:last-child td { border-top: none; }
 

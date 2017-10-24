@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=1060px">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#fff">
+	<link rel="stylesheet" media="all" href="../css/video-js.css" >  
 	<link rel="stylesheet" media="all" href="../css/style.css" >
 	<script src="../js/app.js"></script>
 </head>
@@ -39,7 +40,7 @@
 	
 						<li class="nav__item"><a class="nav__link js-nav-link" href="#zeus_tockens">ZEUS token</a></li>
 	
-						<li class="nav__item"><a class="nav__link js-nav-link" href="">Whitepaper</a></li>
+						<li class="nav__item"><a class="nav__link js-nav-link" href="whitepaper.pdf">Whitepaper</a></li>
 	
 					</ul>
 	
@@ -47,7 +48,7 @@
 	
 				<div class="lang">
 	
-					<div class="lang__current">ENG</div>
+					<div class="lang__current js-lang">ENG</div>
 	
 					<div class="lang__arrow icon-arrow_down"></div>
 	
@@ -97,9 +98,9 @@
 	
 					<a href="https://t.me/joinchat/Cg9KDwhfwYZgztRVemWnwQ"><i class="icon-telegram"></i></a>
 	
-					<a href="https://zeus-official.slack.com"><i class="icon-slack"></i></a>
+					<a href="https://join.slack.com/t/zeus-official/shared_invite/enQtMjU0MzA0MTk5NjM2LTYxMGE2MWY0MWQzOTgyNmU1ZjY4ODM5OTE0ZGQzOTExYjc0YmU3NWY0YmYzZTBjMDg5ZDViNjM4Mzc1YTFmOTQ"><i class="icon-slack"></i></a>
 	
-					<a href="info@zeus-token.io"><i class="icon-mail"></i></a>
+					<a href="mailto:info@zeus-token.io"><i class="icon-mail"></i></a>
 	
 				</div>
 	
@@ -115,7 +116,7 @@
 	
 				<div class="btn-wrap btn-wrap_abs">
 	
-					<button class="btn btn_border btn_green js-join-btn">Buy ZEUS Token</button>
+					<a href="https://ico.zeus-token.io/register?lang=en" class="btn btn_border btn_green">Buy ZEUS Token</a>
 	
 				</div>
 	
@@ -169,7 +170,7 @@
 				</ul>
 			</div>
 	
-			<p class="text text_center">Thus, our mission is to enable everyone not only to help solving garbage utilization problem but also profitably invest and make this world better.</p>
+			<p class="text text_center">Our mission is to give everyone an opportunity not only to help in solving the garbage utilization problem, but also invest profitably by making our world cleaner.</p>
 			
 			<p class="text text_center">First implementation of building garbage recycling factory project which also generates electricity from waste products and uses it for mining in the world - ZEUS EcoCryptoMining.</p>
 	
@@ -192,10 +193,10 @@
 				</ul>
 			</div>
 			
-			<p class="text text_center">But ZEUS EcoCryptoMining is not only cryptocurrency mining, but also sale of heat, fertilizers and recycled materials. It eliminates risks unavoidable for habitual mining plant.</p>
+			<p class="text text_center">ZEUS EcoCryptoMining is not only cryptocurrency mining, but also sale of heat, fertilizers and recycled materials. It eliminates risks unavoidable for habitual mining plant.</p>
 	
 			<div class="btn-wrap btn-wrap_pad">
-				<button class="btn btn_mid js-join-btn">Buy ZEUS Token</button>
+				<a href="https://ico.zeus-token.io/register?lang=en" class="btn btn_mid">Buy ZEUS Token</a>
 			</div>
 		</div>
 	</section>
@@ -207,10 +208,17 @@
 			</div>
 		</div>
 		<div class="row">
-			<a href="#" id="play-video" data-video="b2yUMjnyKpA" class="video">
+			<div id="play-video">
 				<i class="icon-play"></i>
-				<div id="player" class="home-player"></div>
-			</a>
+				<video id="player" class="video-js js-player" controls preload="auto" width="100%" data-setup="{}">
+				    <source src="../videos/zeus_eng.mp4" type='video/mp4'>
+				    <source src="../videos/zeus_eng.webm" type='video/webm'>
+				    <p class="vjs-no-js">
+				      To view this video please enable JavaScript, and consider upgrading to a web browser that
+				      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+				    </p>
+				</video>
+			</div>
 		</div>
 	</section>
 	<section class="section" id="team">
@@ -289,7 +297,7 @@
 	
 						<div class="member__overlay">
 							<div class="member__bottom">
-								<div class="member__info">Has an extensive experience in the field of projection design, engineering services and solutions for the construction and operation of biogas plants, industrial recycling of garbage and solid household waste, food industry waste and agriculture. For more than 15 years he has been heading the company BIT Braun Industrial Technology GmbH, which is an industry with a world-wide name in the market of factories construction based on waste management, construction and operation of biofuel power stations.</div>
+								<div class="member__info">Has an extensive experience in the field of projection design, engineering services and solutions for the construction and operation of biogas plants, industrial recycling of garbage and solid household waste, food industry waste and agriculture. For more than 15 years he has been heading the company BIT Braun Industrial Technology GmbH.</div>
 							</div>
 						</div>
 					</div>
@@ -342,11 +350,72 @@
 			</div>
 		</div>
 	</section>
-	<section class="section" id="road_map" style="background-color: #252626; ">
+	<section class="section section_pad" id="road_map" style="background-color: #252626; ">
 		<div class="row row_center">
 			<h2 class="title-h2 title-h2_white">Project Roadmap</h2>
-	
-			<img class="simple-img" src="../img/road_plan_eng.png" alt="">
+
+			<div class="road-container">
+				<div class="road-year">2017</div>
+				<div class="road-cols">
+					<div class="road-col">
+						<div class="road">
+							<div class="road__arrow road__arrow_left"></div>
+							<div class="road__title">Investment attraction (ICO)</div>
+							<div class="road__section">
+								<div class="road__period">November 2017 - January 2018</div>
+								<div class="road__info">Conducting an ICO for the token purchase of ZEUS Token using Ethereum (ETH).</div>
+							</div>
+						</div>
+					</div>
+					<div class="road-col">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="road-container">
+				<div class="road-year">2018</div>
+				<div class="road-cols">
+					<div class="road-col">&nbsp;</div>
+					<div class="road-col">
+						<div class="road">
+							<div class="road__arrow road__arrow_right"></div>
+							<div class="road__title">Production</div>
+							<div class="road__section road__section_border">
+								<div class="road__period">January - February 2018</div>
+								<div class="road__info">Purchase and rent of land in the industrial zone of Dresden, Germany. Designing and obtaining permissive documentation.</div>
+							</div>
+							<div class="road__section road__section_border">
+								<div class="road__period">March - August 2018</div>
+								<div class="road__info">Construction of the building and production of industrial factory equipment and mining capacities.</div>
+							</div>
+							<div class="road__section road__section_border">
+								<div class="road__period">August - November 2018</div>
+								<div class="road__info">Commissioning of industrial equipment and start of new production, purchase and assembly of mining equipment.</div>
+							</div>
+							<div class="road__section road__section_pad_top">
+								<div class="road__period">November - December 2018</div>
+								<div class="road__info">Start of receiving and recycling garbage, shipment of finished goods and extraction of cryptocurrency.</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="road-container">
+				<div class="road-cols">
+					<div class="road-col">
+						<div class="road">
+							<div class="road__arrow road__arrow_left"></div>
+							<div class="road__title">Provision of mining capacities for rent</div>
+							<div class="road__section">
+								<div class="road__period">December 2018</div>
+								<div class="road__info">Provision of mining capacities for rent.</div>
+							</div>
+						</div>
+					</div>
+					<div class="road-col">&nbsp;</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section class="section" id="propositions" >
@@ -355,7 +424,7 @@
 	
 			<img class="simple-img" src="../img/factory.png" alt="">
 	
-			<div class="text text_divider">It is planned to raise <span class="text_bold">41 620 thousands Euro</span>  (equivalent in Ethereum) during ICO.  Funds will be used to purchase land, construction building for waste processing plant and mining plant, components for assembling mining power, purchase equipment for waste processing, biogas plant, packaging line and loading equipments. <br>We accept funds not only not only in Ethereum but also in Bitcoin.</div>
+			<div class="text text_divider">It is planned to raise <span class="text_bold">41 620 thousands Euro</span>  (equivalent in Ethereum) during ICO.  Funds will be used to purchase land, construction building for waste processing plant and mining plant, components for assembling mining power, purchase equipment for waste processing, packaging line and loading equipments. <br>We accept funds not only not only in Ethereum and Bitcoin, but also in Euro.</div>
 	
 			<div class="text">Production processes construction, configuration and automatization are carried out by companies with a worldwide reputation:</div>
 	
@@ -408,7 +477,7 @@
 				<ul class="circle-items circle-items_4">
 					<li class="circle-item">
 						<div class="circle-item__value circle-item__value_sbig">15%</div>
-						<div class="circle-item__text circle-item__text_sm">of the sold (not for issued) tokens will be distributed among <br> the team</div>
+						<div class="circle-item__text circle-item__text_sm">of the sold tokens will be distributed among <br> the team</div>
 					</li>
 					<li class="circle-item">
 						<div class="circle-item__value circle-item__value_sbig">2%</div>
@@ -431,8 +500,8 @@
 				<tr>
 					<td></td>
 					<td>PRE ICO</td>
-					<td class="right-align">500 000 Tokens</td>
-					<td class="right-align">0.50€ per 1 ZEUS Token</td>
+					<td class="right-align">1 000 000 ZEUS Tokens</td>
+					<td class="right-align">&nbsp;</td>
 				</tr>
 				<tr>
 					<td class="right-align">1-7</td>
@@ -462,7 +531,7 @@
 					<td class="cell-bold" colspan="3">
 						<div class="cell-bold-border">
 							<span class="left-align">Tokens in total</span>
-							<span class="float-right">49 800 000 ZEUS Tokens</span>
+							<span class="float-right">50 300 000 ZEUS Tokens</span>
 						</div>
 					</td>
 					<td></td>
@@ -470,20 +539,55 @@
 				</tr>
 			</table>
 	
-			<div class="description">
-				<div class="description__title">Tokens intended for the team will be distributed step-by-step as follows:</div>
-				<ul class="description__list">
-					<li>• 10% of tokens when the factory is put into operation.</li>
-					<li>• 6% of tokens quarterly after the purchase and disposal of investors' tokens.</li>
-					<li>• After the distribution of tokens, the team is given the opportunity to sell them.</li>
-					<li>• All the tokens bought by the company will be disposed in order to avoid a negative impact on the cost of tokens on the market.</li>
-				</ul>
+			<div class="text">
+				Tokens intended for the team will be distributed on a monthly basis at 5% of their total number within 20 months after plant launch.
+			<div class="text">
+				To avoid negative impact on the cost of tokens on the market, the company will burn tokens monthly in the amount of the corresponding budget.
+			</div>
+			
+			<div class="text">
+				After the plant launch the company will provide services for renting mining equipment and selling hashrates to users. The company will use the generated electricity from garbage processing for mining of cryptocurrencies such as ETH/ZEC/DASH/BTC, etc. The company's mining capacities will be leased out.
 			</div>
 	
-			<div class="text">Token redemption will be held quarterly - <span class="text_bold">5 000 000 Tokens</span> in the quarter. <br>12 payouts by basic price of 1 €/1ZT in the period of 12 months which is calculated according to the course not higher 4000 €\ETH, if course will be higher:</div>
-	
-			<img class="simple-img simple-img_no_mg w800" src="../img/graphic.svg" alt="">
-	
+			<h4 class="title-h4">The cost of leasing the mining capacity for users:</h4>
+
+			<table class="table-indicators table-indicators_mod">
+				<tr>
+					<th>Mined <br> cryptocurrency </th>
+					<th>Capacity</th>
+					<th>Renting price <br> per year (€)</th>
+					<th>The price of <br> capacities rent <br> for 2 years (€)</th>
+				</tr>
+				<tr>
+					<td>ETH </td>
+					<td>100 MH/S</td>
+					<td>1750 </td>
+					<td>2000</td>
+				</tr>
+				<tr>
+					<td>DASH </td>
+					<td>500 MH/S </td>
+					<td>1450 </td>
+					<td>1750</td>
+				</tr>
+				<tr>
+					<td>LTC</td>
+					<td>200 MH/S </td>
+					<td>1350 </td>
+					<td>1850</td>
+				</tr>
+				<tr>
+					<td>BTC </td>
+					<td>14,000 GH/S </td>
+					<td>1500 </td>
+					<td>1600</td>
+				</tr>
+			</table>
+
+			<div class="text text_notice">
+				* Prices calculation for October 2017. The hashrate generated in this way will be sold to the user - the contract for capacity rental will be sold for Zeus Token at a 50% discount. 
+			</div>
+
 		</div>
 	</section>
 	<section class="section" id="id_profit" style="background-color: #252626; ">
@@ -519,25 +623,19 @@
 				</ul>
 			</div>
 	
-			<div class="text text_mg text_center text_white">You not only guarantee pay off the invested funds in green production by cryptoeconomics world development contributing , but also make our planet cleaner. </div>
+			<div class="text text_mg text_center text_white">Besides that, you not only guarantee pay off the invested funds in green production by cryptoeconomics world development contributing , but also make our planet cleaner. </div>
 	
 			<div class="btn-wrap btn-wrap_pad">
-				<button class="btn btn_mod btn_orange">Buy ZEUS Token</button>
+				<a href="https://ico.zeus-token.io/register?lang=en" class="btn btn_mod btn_orange">Buy ZEUS Token</a>
 			</div>
 	
 		</div>
 	</section>
-</div>
-<!-- END out-->
-
-	<!-- BEGIN BUTTON TO UP -->
-	<button class="scroll-top js-scroll-top" type="button"><span></span></button>
-	<!-- END BUTTON TO UP -->
-
+	
 	<!-- BEGIN popup -->
 	<div class="popup">
-		<div class="popup__close-btn js-close-popup">X</div>
-		<div class="popup__inner">
+		<div class="popup__inner js-popup-inner">
+			<div class="popup__close-btn icon-close js-close-popup"></div>
 			<div class="contacts">
 				<form action="">
 					<div class="field js-field">
@@ -556,6 +654,14 @@
 		</div>
 	</div>
 	<!-- END popup -->
+
+</div>
+<!-- END out-->
+
+	<!-- BEGIN BUTTON TO UP -->
+	<button class="scroll-top js-scroll-top" type="button"><span></span></button>
+	<!-- END BUTTON TO UP -->
+
 
 </body>
 </html>
