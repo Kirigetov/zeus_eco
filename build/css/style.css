@@ -55,6 +55,8 @@ body.popup-open { overflow: hidden; }
 .out.jap h2, .out.jap h3, .out.jap h4, .out.jap p { font-weight: normal !important; }
 .out.jap .main-logo { max-width: 700px; }
 .out.jap .main-logo__inner { -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
+.out.kor h2, .out.kor h3, .out.kor h4, .out.kor p { font-weight: normal !important; }
+.out.kor .main-logo { max-width: 600px; }
 
 .row { position: relative; max-width: 1080px; margin: 0 auto; padding: 0 10px; }
 .row_center { text-align: center; }
@@ -137,6 +139,7 @@ b { font-weight: bold; }
 
 .table-indicators_wide { max-width: 850px; margin: 0 auto 30px; }
 .table-indicators_wide_b { max-width: 1000px; }
+.table-indicators_wide_sm { max-width: 835px; }
 .table-indicators_wide tr td:first-child { padding-right: 5px; border-top: none; text-align: right; }
 .table-indicators_wide tr:last-child td { border-top: none; }
 
@@ -150,6 +153,8 @@ b { font-weight: bold; }
 .cell-bold-border:after { content: " "; display: table; clear: both; }
 .cell-bold-border span:last-child { float: right; }
 .cell-bold-border_lg { max-width: 495px; }
+.cell-bold-border_mod { text-align: right; }
+.cell-bold-border_mod .summ { display: inline-block; margin-right: 60px; }
 
 .shift-to_right { padding-left: 35px; }
 
